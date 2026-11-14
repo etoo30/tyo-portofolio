@@ -108,7 +108,7 @@ h1 { margin: 0 0 0 -.065em; font: 400 clamp(4.4rem, 8vw, 6rem)/.88 var(--serif);
 .portrait-coordinate { position: absolute; z-index: 3; top: 24px; right: 23px; color: var(--ink-soft); font: .75rem var(--serif); letter-spacing: .05em; writing-mode: vertical-rl; }
 .portrait-index { position: absolute; right: 0; bottom: -25px; display: flex; gap: 7px; color: var(--ink-dim); font-size: .75rem; font-weight: 700; letter-spacing: .12em; }
 .portrait-index b { color: var(--ink-soft); font-weight: 500; }
-.portrait-photo { position: absolute; z-index: 1; inset: 12px; width: calc(100% - 24px); height: calc(100% - 24px); object-fit: cover; object-position: center top; }
+.portrait-photo { position: absolute; z-index: 1; inset: 12px; width: calc(100% - 24px); height: calc(100% - 24px); object-fit: cover; object-position: center 20%; }
 .portrait-stage.has-photo { background: var(--panel); }
 .portrait-stage.has-photo .portrait-placeholder, .portrait-stage.has-photo::after { display: none; }
 .portrait-stage.has-photo::before { inset: 12px; }
