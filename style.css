@@ -289,8 +289,15 @@ h1 { margin: 0 0 0 -.065em; font: 400 clamp(4.4rem, 8vw, 6rem)/.88 var(--serif);
 }
 
 @media (max-width: 420px) {
-  .certificates-section .certificate-grid { grid-template-columns: 1fr; gap: 24px; }
-  .certificates-section .certificate-art { min-height: 0; }
+  .certificates-section .certificate-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .certificates-section .certificate-art { aspect-ratio: .88; min-height: 0; padding: 10px; }
+  .certificates-section .certificate-art::before { left: 23px; }
+  .certificates-section .document-seal, .certificates-section .circuit-mark { width: 36px; height: 36px; font-size: 1.05rem; }
+  .certificates-section .document-lines { gap: 6px; margin-left: 10px; }
+  .certificates-section .document-stamp { right: 7px; bottom: 8px; font-size: .65rem; }
+  .certificates-section .document-corner { top: 9px; right: 9px; width: 16px; height: 16px; }
+  .certificates-section .certificate-card figcaption { gap: 6px; margin-top: 8px; font-size: .7rem; }
+  .certificates-section .certificate-no { font-size: .7rem; }
   .education-entry { grid-template-columns: 93px minmax(0, 1fr); gap: 9px; }
   .skill-tags span { font-size: .75rem; }
 }
