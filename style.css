@@ -56,9 +56,10 @@ button { color: inherit; font: inherit; }
 .language-switch { display: flex; align-items: center; gap: 7px; color: var(--ink-dim); font-size: .75rem; }
 .language-button { min-width: 30px; min-height: 44px; padding: 0 2px; border: 0; background: transparent; color: var(--ink-dim); cursor: pointer; font-size: .75rem; font-weight: 700; letter-spacing: .08em; transition: color .18s ease; }
 .language-button:hover, .language-button.is-active { color: var(--ink); }
-.theme-toggle { width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid var(--rule); border-radius: 50%; background: transparent; cursor: pointer; transition: border-color .2s ease, transform .25s var(--ease); }
+.theme-toggle { width: auto; min-width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 0 13px; border: 1px solid var(--rule); border-radius: 24px; background: transparent; cursor: pointer; transition: border-color .2s ease, transform .25s var(--ease); }
 .theme-toggle:hover { border-color: var(--ink-soft); transform: rotate(-12deg); }
 .theme-toggle svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.4; }
+.theme-toggle span { font-size: .78rem; }
 .moon-icon { display: none; }
 :root[data-theme="light"] .sun-icon { display: none; }
 :root[data-theme="light"] .moon-icon { display: block; }
@@ -83,6 +84,9 @@ h1 { margin: 0 0 0 -.065em; font: 400 clamp(4.4rem, 8vw, 6rem)/.88 var(--serif);
 .contact-main { min-height: 49px; display: inline-flex; align-items: center; justify-content: center; gap: 21px; padding: 0 17px; background: var(--button); color: var(--button-ink); font-size: .77rem; font-weight: 650; text-decoration: none; transition: transform .2s var(--ease), opacity .2s ease; }
 .contact-main:hover { opacity: .86; transform: translateY(-2px); }
 .contact-main svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.35; }
+.cv-button { min-height: 49px; display: inline-flex; align-items: center; justify-content: center; gap: 13px; padding: 0 15px; border: 1px solid var(--rule-strong); color: var(--ink); font-size: .77rem; font-weight: 600; text-decoration: none; transition: border-color .2s ease, transform .2s var(--ease); }
+.cv-button:hover { border-color: var(--ink); transform: translateY(-2px); }
+.cv-button svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.35; }
 .contact-link { display: inline-flex; min-height: 44px; align-items: center; gap: 5px; color: var(--ink-soft); font-size: .77rem; text-decoration: none; transition: color .18s ease; }
 .contact-link:hover { color: var(--ink); }
 .contact-link span { color: var(--ink-dim); }
@@ -108,7 +112,7 @@ h1 { margin: 0 0 0 -.065em; font: 400 clamp(4.4rem, 8vw, 6rem)/.88 var(--serif);
 .portrait-coordinate { position: absolute; z-index: 3; top: 24px; right: 23px; color: var(--ink-soft); font: .75rem var(--serif); letter-spacing: .05em; writing-mode: vertical-rl; }
 .portrait-index { position: absolute; right: 0; bottom: -25px; display: flex; gap: 7px; color: var(--ink-dim); font-size: .75rem; font-weight: 700; letter-spacing: .12em; }
 .portrait-index b { color: var(--ink-soft); font-weight: 500; }
-.portrait-photo { position: absolute; z-index: 1; inset: 12px; width: calc(100% - 24px); height: calc(100% - 24px); object-fit: cover; object-position: center 20%; }
+.portrait-photo { position: absolute; z-index: 1; inset: 12px; width: calc(100% - 24px); height: calc(100% - 24px); object-fit: cover; object-position: center 10%; }
 .portrait-stage.has-photo { background: var(--panel); }
 .portrait-stage.has-photo .portrait-placeholder, .portrait-stage.has-photo::after { display: none; }
 .portrait-stage.has-photo::before { inset: 12px; }
